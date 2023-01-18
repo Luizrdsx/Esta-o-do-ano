@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showSeason() {
+        var month = document.getElementById("month").value;
+        var season;
+        if (month == "dezembro", "Dezembro" || month == "janeiro", "Janeiro" || month == "fevereiro", "Fevereiro") {
+          season = "verão";
+        } else if (month == "março", "Março" || month == "abril", "Abril" || month == "maio", "Maio") {
+          season = "outono";
+        } else if (month == "junho, Junho" || month == "julho", "Julho" || month == "agosto", "Agosto") {
+          season = "inverno";
+        } else if (month == "setembro", "Setembro" || month == "outubro", "Outubro" || month == "novembro", "Outubro") {
+          season = "primavera";
+        } else {
+          season = "mês inválido";
+        }
+        alert("É " + season + ".");
+      }
+    </script>
+  </head>
+  <h1>Estação do ano</h1>
+  <h5>Escreva o mês abaixo:</h5>
+  <body>
+    <input type="text" id="month" placeholder="Digite o mês (ex: janeiro)">
+    <button onclick="showSeason()">Exibir estação</button>
+  </body>
+</html>
